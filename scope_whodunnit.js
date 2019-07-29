@@ -172,15 +172,40 @@
 
 //episode 9
 
-let murderer = 'Professor Plum';
+// let murderer = 'Professor Plum';
+//
+// if (murderer === 'Professor Plum') {
+//   let murderer = 'Mrs. Peacock';
+// } //this is only set within the block.
+//
+// const declareMurderer = function() {
+//   return `The murderer is ${murderer}.`;
+// } //murderer is Professor Plum
+//
+// const verdict = declareMurderer();
+// console.log(verdict);
 
-if (murderer === 'Professor Plum') {
-  let murderer = 'Mrs. Peacock';
-} //this is only set within the block.
+const scenario = {
+  murderer: 'Mrs. Peacock',
+  room: 'Conservatory',
+  weapon: 'Lead Pipe'
+}
+const changeScenario = function () {
+  if (scenario.murderer == 'Mr Green') {
+    murderer = 'Miss Scarlet'
+  } else {
+    murderer = "Colonel Mustard"
+  }
+}
+
+const updateMurderer = function () {
+  let murderer = 'Mrs White'
+}
 
 const declareMurderer = function() {
   return `The murderer is ${murderer}.`;
-} //murderer is Professor Plum
+}
 
+changeScenario();
 const verdict = declareMurderer();
 console.log(verdict);
